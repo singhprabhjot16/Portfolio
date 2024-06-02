@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Gilda+Display&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+  
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +20,16 @@ body {
     width: 100%;
     height: 100vh;
     background-attachment: fixed;
-    background-image: url(/Images/milad-fakurian-u8Jn2rzYIps-unsplash.jpg);
+    background-image: url(./Images/milad-fakurian-u8Jn2rzYIps-unsplash.jpg);
     background-size: cover;
 }
 
 #filled {
     height: 5px;
-    width: 100%;
+    width: 0%;
     background-color: #ffb000;
     position: fixed;
+    z-index: 1;
 }
 
 .padding-div {
@@ -38,18 +51,23 @@ body {
 }
 
 .list-tag {
-    margin: 0px 50px;
+    padding: 0px 50px;
     font-size: 1.3em;
+}
 
+.list-tag a:hover {
+    font-size: 1.2em;
+    color: white;
 }
 
 .list-tag a {
     color: #d5d4ff;
     text-decoration: none;
+    transition: all 0.3s;
 }
 
 .constant {
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(100px);
     max-width: 100%;
     margin-left: 50px;
     margin-right: 50px;
@@ -63,6 +81,13 @@ body {
 
 #intro {
     height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#intro-text {
+    width: 50%;
 }
 
 #greeting {
@@ -79,7 +104,7 @@ body {
 }
 
 #tagline {
-    color: #9290C3;
+    color: #d5d4ff;
     font-size: 1.5em;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -110,6 +135,23 @@ body {
     scale: 1.1;
 }
 
+/* #resume-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 10%;
+} */
+
+/* #resume-section p{
+    color: #d5d4ff;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+ */
+
 .description {
     margin-left: 70px;
 }
@@ -126,7 +168,7 @@ body {
 }
 
 .logo {
-    width: 60px;
+    width: 50px;
     margin: 0px 10px;
     background-color: white;
     padding: 5px 5px;
@@ -141,6 +183,13 @@ body {
 
 .category span {
     color: #d5d4ff;
+}
+
+.about-p, .description p {
+    color: #d5d4ff;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 1.1em;
 }
 
 
