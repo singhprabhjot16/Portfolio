@@ -25,9 +25,9 @@
             <p id="name" class="dm-serif-display-regular">Prabhjot Singh</p>
             <p id="tagline"><i>Bringing Design and Development Together...</i></p>
             <div id="socials">
-                <a href="https://www.linkedin.com/in/prabhjot-singh-931612229/"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
-                <a href="https://twitter.com/prabhjots5498"><i id="twitter" class="fa-brands fa-square-x-twitter"></i></a>
-                <a href="https://github.com/singhprabhjot16"><i id="github" class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/prabhjot-singh-931612229/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com/prabhjots5498" target="_blank"><i id="twitter" class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://github.com/singhprabhjot16" target="_blank"><i id="github" class="fa-brands fa-square-github"></i></a>
             </div>
         </div>
         <!-- <div id="resume-section">
@@ -55,20 +55,20 @@
             <p class="name">SKILLS</p>
         </div>
         <div class="description">
-            <p>Languages</p>
+            <p class="skills-category">Languages</p>
             <div class="category">
                 <img src="./Images/c_6132222.png" alt="" class="logo">
                 <img src="./Images/python_5968350.png" alt="" class="logo">
                 <img src="./Images/js_5968292.png" alt="" class="logo">
                 <img src="./Images/mysql_5968313.png" alt="" class="logo">
             </div>
-            <p>Frontend Development</p>
+            <p class="skills-category">Frontend Development</p>
             <div class="category">
                 <img src="./Images/html_1051277.png" alt="" class="logo">
                 <img src="./Images/css-3_732190.png" alt="" class="logo">
                 <img src="./Images/images.png" alt="" class="logo">
             </div>
-            <p>Tools and Technologies</p>
+            <p class="skills-category">Tools and Technologies</p>
             <div class="category">
                 <img src="./Images/images (1).png" alt="" class="logo">
                 <img src="./Images/github_3291667.png" alt="" class="logo">
@@ -85,16 +85,39 @@
             <p class="name">PROJECTS</p>
         </div>
         <div class="description">
-
+            <div class="project">
+                <p class="project-name">Amazon India Static Clone</p>
+                <p class="project-description">A static UI clone of Amazon India landing page using HTML and Vanilla CSS</p>
+                <img src="./Images/amazon_thumbnail.png" alt="">
+                <div class="project-links">
+                    <a href="https://singhprabhjot16.github.io/Amazon-Clone/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/singhprabhjot16/Amazon-Clone" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <p class="project-name">Portfolio</p>
+                <p class="project-description">Portfolio using HTML, Vanilla CSS and JavaScript</p>
+                <img src="./Images/portfolio-thumbnail.png" alt="">
+                <div class="project-links">
+                    <a href="https://singhprabhjot16.github.io/Portfolio/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    <a href="https://github.com/singhprabhjot16/Portfolio" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="contact" class="padding-div constant">
         <div class="title">
-            <p class="name">CONTACT</p>
+            <p class="name" id="contact-title">CONTACT</p>
         </div>
         <div class="description">
-
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="61c7dc10-2244-4056-8ab1-700cfad7da57">
+                <input name="name" type="text" placeholder="Name" id="username" class="contact-field" required>
+                <input name="email" type="email" placeholder="Email" id="email" class="contact-field" required>
+                <textarea name="message" type="text" placeholder="Write your message..." id="message" class="contact-field" required></textarea>
+                <button id="submit">Submit</button>
+            </form>
         </div>
     </div>
     <script src="index.js"></script>

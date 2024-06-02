@@ -8,3 +8,12 @@ function updateProgressBar() {
     const scrolled = (winScroll / height) * 100;
     document.getElementById('filled').style.width = scrolled + "%";
 }
+
+const contactFields = document.querySelectorAll('.contact-field');
+const contactForm = document.querySelector('form');
+
+contactForm.addEventListener('submit', function(e) {
+    for (let i = 0; i < contactFields.length; i++) {
+        contactFields[i].value = "";
+    }
+});
