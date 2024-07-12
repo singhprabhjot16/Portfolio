@@ -10,7 +10,7 @@ function updateProgressBar() {
 }
 
 // const contactFields = document.querySelectorAll('.contact-field');
-const contactForm = document.querySelector('form');
-contactForm.addEventListener('submit', function(e) {
-    contactForm.reset();
-});
+// const contactForm = document.querySelector('form');
+// contactForm.addEventListener('submit', function(e) {
+//     contactForm.reset();
+// });
